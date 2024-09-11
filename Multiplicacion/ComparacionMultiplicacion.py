@@ -3,7 +3,6 @@ import random
 from Tradicional import *
 from Optimizado import *
 from Strassen import *
-from MatricesAleatorias import *
 from MatricesOrden import *
 
 def medir_tiempo(alg, arr1, arr2):
