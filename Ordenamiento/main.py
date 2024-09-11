@@ -4,6 +4,7 @@ from Mergesort import *
 from Quicksort import *
 from FuncionSorting import *
 from MatrizAleatoria import *
+from MatrizOrden import *
 
 def medir_tiempo(algoritmo, arr):
     inicio = time.time()
@@ -11,7 +12,15 @@ def medir_tiempo(algoritmo, arr):
     fin = time.time()
     return fin - inicio
 
-listam = matriz_aleatoria()
+print("Seleccione que tipo de matriz quiere crear: \n1. Aleatoria. \n2. Aleatoria con caracteristica de orden.")
+el=int(input())
+
+if el==1:
+    listam = matriz_aleatoria()
+elif el==2:
+    listam = matriz_orden()
+else:
+    print("Seleccion invalida.")
 
 algoritmos = {
     "Insertion Sort": insertion_sort,
