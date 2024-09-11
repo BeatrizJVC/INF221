@@ -6,7 +6,7 @@ def matriz_orden():
     tipo_orden=int(input("Ingrese el tipo de ordenación (1. Aleatorio, 2. Completamente ordenado, 3. Semi ordenado, 4. Parcialmente ordenado): "))
 
     matriz = np.random.randint(0, 100, size=(filas, columnas))
-    
+
     if tipo_orden == 1:
         lista = matriz
     elif tipo_orden == 2:
@@ -25,7 +25,7 @@ def matriz_orden():
         raise ValueError("Tipo de ordenación no reconocido")
     return lista
 
-def crear_matrices():
+def crear_matrices_o():
     print("Caracteristicas matriz 1:")
     lista1 = matriz_orden()
     print("\nCaracteristicas matriz 2:")
@@ -33,7 +33,7 @@ def crear_matrices():
     return [lista1, lista2]
 
 def matrices_orden():
-    listas=crear_matrices()
+    listas=crear_matrices_o()
     lista_a = listas[0]
     lista_b = listas[1]
     with open("Matrices.txt", 'w') as archivo:
