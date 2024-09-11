@@ -13,15 +13,8 @@ def medir_tiempo(alg, arr1, arr2):
     return fin - inicio
 
 def crear_mats():
-    print("Seleccione tipo de matrices: \n1. Aleatorias. \n2. Aleatorias con caracteristica de orden.")
     print("IMPORTANTE: El valor de la columna de matriz 1 debe ser igual al valor de fila de matriz 2 y los tamaños deben ser potencias de 2.")
-    el1=int(input())
-    if el1==1:
-        listasm = matrices_aleatorias()
-    elif el1==2:
-        listasm = matrices_orden()
-    else:
-        print("Seleccion invalida.")
+    listasm = matrices_orden()
     return listasm
 
 
