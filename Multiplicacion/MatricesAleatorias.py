@@ -24,6 +24,6 @@ def guardar(lista_a, lista_b, nombre_archivo):
 
         archivo.write("\n\nMatriz 2 =\n")
         for elemento2 in lista_b:
-            archivo.write(f"{elemento2}")
+            archivo.write(f"{elemento2}\n")
 
 guardar(lista1,lista2,"Matrices.txt")
